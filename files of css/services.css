@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3fa2c4;
+}
+h1{
+    color:black;
+    position: relative;
+}
+.services:hover{
+    text-decoration: underline blue;
+    font-size: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    background-color: #cfdbde;
+
+}
+h2{
+    color: #3fa2c4;
+}
+.img-services{
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.img-services::after{
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -200px;
+    width: 120%;
+    transform: rotate(50deg);
+    background-color: #cfdbde;
+    height: 18px;
+    filter: blur(30px);
+    opacity: 0.5;
+    transition: 1s;
+}
+.img-services:hover::after{
+    width: 225%;
+    top: -100%;
+
+}
+
+.button a{
+    list-style: none;
+    text-decoration: none;
+    color:white;
+    background-color:black;
+    font-size: 25px;
+}
+.button a:hover{
+    background-color: aqua;
+    color: black;
+    font-size: 25px;
+}
+p{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
